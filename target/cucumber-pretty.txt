@@ -1,0 +1,26 @@
+# =====================================Test Case Details==============================================================================
+# Author: Vaibhav Khachane
+# TC Name: Login ( Happy and Negative Path )
+# TC 1: Login  - Create date: 21/09/2021
+# Total Scenarios
+# Update History:
+# =====================================================================================================================================
+@Login
+Feature: Sign In Functionality
+  As an user of the Mobile Store
+  I want to login to the Application with user credentials
+  In order to use the application features.
+
+  # Steps for Launch Mobile Store App
+  Background: Launch the Mobile Store Application                         # src/test/java/features/Login.feature:17
+    Given I am on Mobile Store first screen for Login Test Case Execution # stepDefLogin.iAmOnApplicationScreen()
+    Then Change Application language as English                           # stepDefLogin.changeApplicationLanguageAsEnglish()
+
+  # Scenario to validate Login Mobile Store app with valid Username and Password
+  @test
+  Scenario: Login Mobile Store with Valid username and Password                          # src/test/java/features/Login.feature:23
+    Then Click on Login Button                                                           # stepDefLogin.clickOnLoginButton()
+    Then Enter valid username "andri+trial-1@xendit.co" and valid Password "Xendit.co!1" # stepDefLogin.enterValidUsernameAndValidPassword(String,String)
+    Then Create a PIN and Confirm PIN again                                              # stepDefLogin.createAPINAndConfirmPINAgain()
+    And I should be on Home screen                                                       # stepDefLogin.iShouldOnHomescreen()
+    Then I should be able to logout                                                      # stepDefLogin.iShouldBeAbleToLogout()

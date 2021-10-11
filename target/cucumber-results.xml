@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="238.297994">
+<testcase classname="Sign In Functionality" name="Login Mobile Store with Valid username and Password" time="238.297994">
+<system-out><![CDATA[Given I am on Mobile Store first screen for Login Test Case Execution.......passed
+Then Change Application language as English.................................passed
+Then Click on Login Button..................................................passed
+Then Enter valid username "andri+trial-1@xendit.co" and valid Password "Xendit.co!1".passed
+Then Create a PIN and Confirm PIN again.....................................passed
+And I should be on Home screen..............................................passed
+Then I should be able to logout.............................................passed
+]]></system-out>
+</testcase>
+</testsuite>
